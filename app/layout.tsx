@@ -4,6 +4,10 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Gradient } from "@/components/gradient";
 import ActiveSectionProvider from "@/context/ActiveSectionContext";
+import { Toaster } from "react-hot-toast";
+import { Footer } from "@/components/footer";
+import ThemeProvider from "@/context/themContext";
+import { ThemeSwitch } from "@/components/themeSwitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,15 +23,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36`}
+        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 transition-colors dark:text-opacity-90`}
       >
-        <ActiveSectionProvider>
-          <Gradient />
-          <Header />
-          {children}
-        </ActiveSectionProvider>
+        <ThemeProvider>
+          <ActiveSectionProvider>
+            <Gradient />
+            <Header />
+            {children}
+            <Footer />
+            <Toaster position="top-right" />
+          </ActiveSectionProvider>
+          <ThemeSwitch />
+        </ThemeProvider>
       </body>
     </html>
   );

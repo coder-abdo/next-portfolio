@@ -1,4 +1,4 @@
-import { links } from "@/lib/data";
+import { links, skillsData, experiencesData } from "@/lib/data";
 import {
   Dispatch,
   ReactNode,
@@ -19,4 +19,20 @@ type Props = {
 };
 
 type SectionName = (typeof links)[number]["name"];
-export type { ActiveSectionContextType, Props, SectionName };
+type SkillType = (typeof skillsData)[number];
+type ExperineceType = (typeof experiencesData)[number];
+type themeType = "light" | "dark";
+type themeContextType = {
+  theme: themeType;
+  handleSetTheme: () => void;
+};
+export type {
+  ActiveSectionContextType,
+  Props,
+  SectionName,
+  SkillType,
+  ExperineceType,
+  themeContextType,
+  themeType,
+};
+

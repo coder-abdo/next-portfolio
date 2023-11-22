@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { animate, motion } from "framer-motion";
-import { links } from "@/lib/data";
 import clsx from "clsx";
+import { links } from "@/lib/data";
 import { useActiveLink } from "@/hooks/useActiveLink";
 
 export const Navbar = () => {
@@ -18,7 +18,7 @@ export const Navbar = () => {
           >
             <Link
               className={clsx(
-                "flex items-center justify-center p-3 hover:text-gray-950 transition",
+                "flex items-center justify-center p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                 {
                   "text-gray-950": link.name === activeSection,
                 },
