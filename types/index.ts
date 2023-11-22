@@ -1,13 +1,5 @@
 import { links, skillsData, experiencesData } from "@/lib/data";
-import {
-  Dispatch,
-  ReactNode,
-  SetStateAction,
-  createContext,
-  useContext,
-  useMemo,
-  useState,
-} from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 type ActiveSectionContextType = {
   activeSection: (typeof links)[number]["name"];
   setActiveSection: Dispatch<SetStateAction<(typeof links)[number]["name"]>>;
@@ -35,4 +27,3 @@ export type {
   themeContextType,
   themeType,
 };
-
