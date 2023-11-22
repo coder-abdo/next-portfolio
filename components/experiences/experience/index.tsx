@@ -26,7 +26,7 @@ export const Experience: FC<Props> = ({ experience }) => {
         fontSize: "1.5rem",
       }}
       date={experience.date}
-      icon={experience.icon}
+      icon={<>{experience.icon}</>}
     >
       <h3 className="font-semibold capitalize vertical-timeline-element-title">
         {experience.title}
