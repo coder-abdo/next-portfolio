@@ -75,18 +75,21 @@ export const projectsData = [
     title: "Crown Clothes Ecommerce",
     description:
       "this is my first full-stack E-commerce project using React and Firebase",
+    linkSrc: "https://crown-clothes-eight.vercel.app/",
     tags: ["React", "Typescript", "Sass", "Firebase", "Redux"],
     imageUrl: crownClothes,
   },
   {
     title: "Twitter Clone",
     description: "this is a simple version of twitter using T3 stack",
+    linkSrc: "https://t3-twiiter-clone.vercel.app/",
     tags: ["Prisma", "TypeScript", "Next.js", "Tailwind", "TRPC"],
     imageUrl: twitterClone,
   },
   {
     title: "Personal Blog",
     description: "this is my personal blog which contains my blog posts",
+    linkSrc: "https://my-blog-snowy-delta.vercel.app/",
     tags: ["Astro JS", "Typescript", "Tailwind"],
     imageUrl: myBlog,
   },
@@ -94,6 +97,7 @@ export const projectsData = [
     title: "Notes App",
     description:
       "this is a simple version of taking notes with full authentication and authorization and save them later",
+    linkSrc: "https://notes-liart-two.vercel.app/",
     tags: ["Next.JS", "Typescript", "Tailwind", "Prisma"],
     imageUrl: notesApp,
   },

@@ -4,7 +4,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useProjectAnimate } from "@/hooks/useProjectAnimate";
 type Props = (typeof projectsData)[number];
-export const Project: FC<Props> = ({ title, tags, imageUrl, description }) => {
+export const Project: FC<Props> = ({
+  title,
+  tags,
+  imageUrl,
+  description,
+  linkSrc,
+}) => {
   const { ref, scaleProgress, opacityprogress } = useProjectAnimate();
   return (
     <motion.div
@@ -21,6 +27,15 @@ export const Project: FC<Props> = ({ title, tags, imageUrl, description }) => {
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+          <a
+            href={linkSrc}
+            className="mb-2 text-blue-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="project link"
+          >
+            {linkSrc}
+          </a>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
