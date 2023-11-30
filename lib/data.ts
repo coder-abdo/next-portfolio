@@ -8,7 +8,7 @@ import moviesApp from "@/public/full-movies-app.png";
 import myBlog from "@/public/my-blog.png";
 import notesApp from "@/public/notes-app.png";
 import vueNotesApp from "@/public/vue-notes-app.png";
-
+import vueMicroBlog from "@/public/vue-microblog-app.png";
 export const links = [
   {
     name: "Home",
@@ -108,6 +108,13 @@ export const projectsData = [
     linkSrc: "https://vue-notes-app-teal.vercel.app/",
     tags: ["Vue", "CSS", "Vite"],
     imageUrl: vueNotesApp,
+  },
+  {
+    title: "Vue Microblog",
+    description: "this is a simple version of blog using Vue.js",
+    linkSrc: "https://vue-microblog.vercel.app/",
+    tags: ["Vue", "CSS", "Vite"],
+    imageUrl: vueMicroBlog,
   },
 ] as const;
 
