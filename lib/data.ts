@@ -7,6 +7,7 @@ import twitterClone from "@/public/twitter-clone.png";
 import moviesApp from "@/public/full-movies-app.png";
 import myBlog from "@/public/my-blog.png";
 import notesApp from "@/public/notes-app.png";
+import vueNotesApp from "@/public/vue-notes-app.png";
 
 export const links = [
   {
@@ -100,6 +101,13 @@ export const projectsData = [
     linkSrc: "https://notes-liart-two.vercel.app/",
     tags: ["Next.JS", "Typescript", "Tailwind", "Prisma"],
     imageUrl: notesApp,
+  },
+  {
+    title: "Vue note app",
+    description: "this is a simple version of notes app using Vue.js",
+    linkSrc: "https://vue-notes-app-teal.vercel.app/",
+    tags: ["Vue", "CSS", "Vite"],
+    imageUrl: vueNotesApp,
   },
 ] as const;
 
