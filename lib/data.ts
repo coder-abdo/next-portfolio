@@ -9,6 +9,7 @@ import myBlog from "@/public/my-blog.png";
 import notesApp from "@/public/notes-app.png";
 import vueNotesApp from "@/public/vue-notes-app.png";
 import vueMicroBlog from "@/public/vue-microblog-app.png";
+import vueCapstone from "@/public/vue-capstone-app.png";
 export const links = [
   {
     name: "Home",
@@ -115,6 +116,14 @@ export const projectsData = [
     linkSrc: "https://vue-microblog.vercel.app/",
     tags: ["Vue", "CSS", "Vite"],
     imageUrl: vueMicroBlog,
+  },
+  {
+    title: "Capstone Project",
+    description:
+      "this is a simple photos app using vue.js, vuex, and vue-router",
+    linkSrc: "https://vue-capstone-app.vercel.app/",
+    tags: ["Vue", "Vuex", "Vue-Router", "Vite"],
+    imageUrl: vueCapstone,
   },
 ] as const;
 
